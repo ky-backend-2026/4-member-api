@@ -19,23 +19,23 @@ public class Member {
     private Long id;
 
     private String name;
-
     private String email;
-
     private String password;
+    private String role;
 
     private LocalDateTime createdAt;
 
-    public Member(String name, String email,String password){
+    public Member(String name, String email, String password) {
         this.name = name;
-        this.email=email;
-        this.password=password;
-        this.createdAt=LocalDateTime.now();
+        this.email = email;
+        this.password = password;
+        this.role="ROLE_USER";
+        this.createdAt = LocalDateTime.now();
     }
 
 
-    public void update(String name, String email){
-        this.name=name;
-        this.email=email;
+    public void update(String name, String email) {
+        this.name = name;
+        this.email = email;
     }
 }

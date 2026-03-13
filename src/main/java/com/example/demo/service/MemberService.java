@@ -6,7 +6,7 @@ import com.example.demo.dto.MemberResponse;
 import com.example.demo.dto.UpdateMemberRequest;
 import com.example.demo.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
-import org.hibernate.sql.Update;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
